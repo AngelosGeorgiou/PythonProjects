@@ -27,3 +27,4 @@ def validSolution(board):
                     if board[x+j][y+i] in a: a.remove(board[x+j][y+i])
                     else: return False              
     return True
+
