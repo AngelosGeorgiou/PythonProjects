@@ -1,4 +1,4 @@
-# o give credit where credit is due: This problem was taken from the ACMICPC-
+# To give credit where credit is due: This problem was taken from the ACMICPC-
 # Northwest Regional Programming Contest. Thank you problem writers.
 
 # You are helping an archaeologist decipher some runes. He knows that this
