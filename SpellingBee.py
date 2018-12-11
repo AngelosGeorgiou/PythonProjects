@@ -14,6 +14,7 @@
 # Answer: 5
 
 def how_many_bees(hive):
+	if len(hive) == 0: return 0
 	def hmb(hive):
 		total = 0
 		aux = list()
@@ -26,8 +27,10 @@ def how_many_bees(hive):
 	return hmb(hive) + hmb(zip(*hive))
 
 
-hive = ["bee.bee",
-        ".e..e..",
-        ".b..eeb"]
+#Better solutions 
+#https://www.codewars.com/kata/reviews/5920efb0736ad71291000390/groups/59229b634a235f93eb000da5
+def count(it):
+    return sum(''.join(x).count('bee') + ''.join(x).count('eeb') for x in it)
 
-print(how_many_bees(hive))
+def how_many_bees(hive):
+    return count(hive) + count(zip(*hive)) if hive else 0
